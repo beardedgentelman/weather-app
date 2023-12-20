@@ -1,0 +1,42 @@
+{
+  "Navigation": {
+    "dashboard": "Головна",
+    "favorites": "Обране"
+  },
+  "FavoritesPage": {
+    "title": "Обране",
+    "empty": "Порожньо.",
+    "message": "Ви можете додати погоду до обраної на блоці погоди."
+  },
+  "RemoveBlockDialog": {
+    "title": "Ви дійсно бажаєте видалити",
+    "yesButton": "Так",
+    "noButton": "Нi"
+  },
+  "WeatherData": {
+    "buttons": {
+      "day": "День",
+      "week": "Тиждень"
+    },
+    "selectCity": "Виберіть місто, будь ласка.",
+    "notFound": "На жаль, не вдалося знайти погоду для вказаного міста."
+
+  },
+  "WeatherCard": {
+    "solarCycleTitle": "Сонячний цикл",
+    "sunrise": "Свiтанок",
+    "sunset": "Захiд",
+    "visibility": "Видимiсть",
+    "clouds": "Хмарнiсть",
+    "wind": "Вiтер",
+    "feels_like": "Відчувається як"
+  },
+  "WeatherCharts": {
+    "temp": "Температура"
+  },
+  "FavoritesWarning": {
+    "title": "У вас занадто багато та обраних погодних блоків.",
+    "message": "Щоб додати, видаліть один із обраних блоків."
+  },
+  "searchCities": "Назва міста..."
+}

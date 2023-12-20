@@ -1,0 +1,41 @@
+{
+  "Navigation": {
+    "dashboard": "Dashboard",
+    "favorites": "Favorites"
+  },
+  "FavoritesPage": {
+    "title": "Favorites",
+    "empty": "Empty.",
+    "message": "You can add weather to favorites on the weather block."
+  },
+  "RemoveBlockDialog": {
+    "title": "Are you sure you want to delete",
+    "yesButton": "Yes",
+    "noButton": "No"
+  },
+  "WeatherData": {
+    "buttons": {
+      "day": "Day",
+      "week": "Week"
+    },
+    "selectCity": "Select city, please.",
+    "notFound": "Unfortunately, we were unable to find the city."
+  },
+  "WeatherCard": {
+    "solarCycleTitle": "Solar cycle",
+    "sunrise": "Sunrise",
+    "sunset": "Sunset",
+    "visibility": "Visibility",
+    "clouds": "Clouds",
+    "wind": "Wind",
+    "feels_like": "Feels like"
+  },
+  "WeatherCharts": {
+    "temp": "Temperature"
+  },
+  "FavoritesWarning": {
+    "title": "You have too many and selected weather blocks.",
+    "message": "To add, remove any of the selected blocks."
+  },
+  "searchCities": "City name..."
+}

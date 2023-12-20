@@ -1,0 +1,70 @@
+## API Documentation
+
+### Overview
+
+This API provides functionalities for fetching location details and weather data using Google Maps and OpenWeatherMap APIs.
+
+### Authorization
+
+The API requires API keys for Google Maps and OpenWeatherMap. These keys should be set as environment variables:
+
+- `VUE_APP_GOOGLE_API`: Google Maps API key
+- `VUE_APP_WEATHER_API`: OpenWeatherMap API key
+
+### Endpoints
+
+#### 1. `fetchLocations(value: string): Promise<object[] | null>`
+
+- **Description:** Fetches location predictions based on the input value using Google Places Autocomplete API.
+- **Parameters:**
+  - `value` (string): The input value for location search.
+- **Returns:** An array of location predictions or `null` if an error occurs.
+
+#### 2. `fetchWeatherForDay(city: string): Promise<object | null>`
+
+- **Description:** Retrieves current weather data for a specified city using OpenWeatherMap.
+- **Parameters:**
+  - `city` (string): The name of the city for weather data.
+- **Returns:** Current weather data object or `null` if an error occurs.
+
+#### 3. `fetchWeatherForCharts(city: string): Promise<object | null>`
+
+- **Description:** Fetches weather forecast data for the next 8 intervals (3-hour intervals) for a specified city using OpenWeatherMap.
+- **Parameters:**
+  - `city` (string): The name of the city for weather forecast.
+- **Returns:** Weather forecast data object or `null` if an error occurs.
+
+#### 4. `fetchWeather(city: string): Promise<{ day: object | null, charts: object | null }>`
+
+- **Description:** Fetches both current weather data and weather forecast for a specified city using OpenWeatherMap.
+- **Parameters:**
+  - `city` (string): The name of the city for weather data and forecast.
+- **Returns:** An object containing both current weather data (`day`) and weather forecast (`charts`) or `null` if an error occurs.
+
+#### 5. `fetchWeatherById(id: string): Promise<object | void>`
+
+- **Description:** Retrieves current weather data by city ID using OpenWeatherMap.
+- **Parameters:**
+  - `id` (string): The ID of the city for weather data.
+- **Returns:** Current weather data object or nothing if an error occurs.
+
+#### 6. `fetchUserLocation(longitude: number, latitude: number): Promise<object[] | null>`
+
+- **Description:** Fetches user location predictions based on latitude and longitude using Google Geocoding API.
+- **Parameters:**
+  - `longitude` (number): Longitude coordinate of the user's location.
+  - `latitude` (number): Latitude coordinate of the user's location.
+- **Returns:** An array of location predictions or `null` if an error occurs.
+
+### Error Handling
+
+- If an error occurs during API requests, the functions will log an error message and return `null` or `void`.
+
+### Rate Limiting
+
+- The API requests may be subject to rate limits imposed by Google Maps and OpenWeatherMap. Ensure compliance with their usage policies and limits.
+
+### Notes
+
+- For security, ensure proper handling and storage of API keys.
+- CORS headers may need to be configured for certain endpoints.
